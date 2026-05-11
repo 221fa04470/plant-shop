@@ -53,7 +53,7 @@ export default function HeroBanner() {
           <div className="flex-1 relative w-full max-w-md lg:max-w-none">
             <div className="relative aspect-[4/5] rounded-3xl overflow-hidden shadow-card-hover">
               <Image
-                src="https://images.unsplash.com/photo-1545759300-8197aed5d7a0?w=800&q=80"
+                src="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=800&q=80"
                 alt="Beautiful indoor plants collection"
                 fill
                 className="object-cover"
