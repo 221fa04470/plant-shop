@@ -8,7 +8,7 @@ const topSellingPlants = [
     name: 'Peace Lily',
     price: 549,
     originalPrice: 699,
-    image: 'https://images.unsplash.com/photo-1606571807048-3e7c671b6e9b?w=500&q=80',
+    image: 'https://images.unsplash.com/photo-1593482892290-f54927ae1bb6?w=500&q=80',
     tag: 'Sale',
     rating: 5,
     reviews: 128,
@@ -17,7 +17,7 @@ const topSellingPlants = [
     id: 2,
     name: 'Snake Plant',
     price: 399,
-    image: 'https://images.unsplash.com/photo-1501004318641-b39e6451bec6?w=500&q=80',
+    image: 'https://images.unsplash.com/photo-1572688484438-313a6e50c333?w=500&q=80',
     rating: 4.8,
     reviews: 256,
     isNew: false,
@@ -26,7 +26,7 @@ const topSellingPlants = [
     id: 3,
     name: 'Pothos Golden',
     price: 299,
-    image: 'https://images.unsplash.com/photo-1598880940080-ff9a29891b85?w=500&q=80',
+    image: 'https://images.unsplash.com/photo-1611735341450-74d61e660ad2?w=500&q=80',
     rating: 4.7,
     reviews: 189,
     isNew: true,
@@ -36,7 +36,7 @@ const topSellingPlants = [
     name: 'ZZ Plant',
     price: 649,
     originalPrice: 799,
-    image: 'https://images.unsplash.com/photo-1485955900006-10f4d324d411?w=500&q=80',
+    image: 'https://images.unsplash.com/photo-1632207691143-643e2a9a9361?w=500&q=80',
     tag: 'Sale',
     rating: 4.9,
     reviews: 97,
@@ -45,7 +45,7 @@ const topSellingPlants = [
     id: 5,
     name: 'Rubber Plant',
     price: 749,
-    image: 'https://images.unsplash.com/photo-1520412099551-62b6bafeb5bb?w=500&q=80',
+    image: 'https://images.unsplash.com/photo-1604762524889-3e2fcc145683?w=500&q=80',
     rating: 4.6,
     reviews: 74,
     isNew: true,
@@ -54,7 +54,7 @@ const topSellingPlants = [
     id: 6,
     name: 'Aloe Vera',
     price: 199,
-    image: 'https://images.unsplash.com/photo-1567748157439-651aca2ff064?w=500&q=80',
+    image: 'https://images.unsplash.com/photo-1596547609652-9cf5d8c10616?w=500&q=80',
     rating: 4.8,
     reviews: 312,
   },
@@ -62,7 +62,7 @@ const topSellingPlants = [
     id: 7,
     name: 'Spider Plant',
     price: 249,
-    image: 'https://images.unsplash.com/photo-1543466835-00a7907e9de1?w=500&q=80',
+    image: 'https://images.unsplash.com/photo-1661770132734-c9e20ec89e72?w=500&q=80',
     rating: 4.5,
     reviews: 143,
   },
@@ -71,7 +71,7 @@ const topSellingPlants = [
     name: 'Chinese Evergreen',
     price: 499,
     originalPrice: 599,
-    image: 'https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=500&q=80',
+    image: 'https://images.unsplash.com/photo-1558293842-c0fd3db86157?w=500&q=80',
     tag: 'Sale',
     rating: 4.7,
     reviews: 88,
@@ -92,7 +92,6 @@ export default function TopSelling() {
             Browse All Plants
           </Button>
         </div>
-
         <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6">
           {topSellingPlants.map((plant) => (
             <PlantCard key={plant.id} {...plant} />

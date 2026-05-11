@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import Button from './Button'
 
 export default function O2Plants() {
@@ -16,14 +15,11 @@ export default function O2Plants() {
           <div className="flex flex-col lg:flex-row items-center gap-0">
             {/* Image */}
             <div className="relative w-full lg:w-2/5 aspect-[4/3] lg:aspect-auto lg:h-[500px] shrink-0">
-              <Image
-                src="https://images.unsplash.com/photo-1632399041768-0a56c2b91c0a?w=800&q=80"
+              <img
+                src="https://images.unsplash.com/photo-1545241047-6083a3684587?w=800&q=80"
                 alt="O2 Plant - Air purifying plant"
-                fill
-                className="object-cover"
-                sizes="(max-width: 1024px) 100vw, 40vw"
+                className="w-full h-full object-cover"
               />
-              {/* Badge overlay */}
               <div className="absolute bottom-6 left-6 bg-white/95 backdrop-blur rounded-2xl px-4 py-3 shadow-lg">
                 <p className="text-xs text-text-gray">Air Quality</p>
                 <p className="font-bold text-primary text-sm">+40% Oxygen Output</p>
@@ -45,8 +41,6 @@ export default function O2Plants() {
               <p className="text-white/80 text-base leading-relaxed mb-8 max-w-md">
                 Our specially curated O₂ plants are scientifically proven to improve indoor air quality. Give your family the gift of fresher, cleaner air every day.
               </p>
-
-              {/* Benefits grid */}
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
                 {benefits.map((b) => (
                   <div key={b.title} className="flex items-start gap-3">
@@ -58,8 +52,6 @@ export default function O2Plants() {
                   </div>
                 ))}
               </div>
-
-              {/* CTA */}
               <div className="flex flex-col sm:flex-row gap-3">
                 <button className="inline-flex items-center justify-center bg-white text-primary font-semibold px-6 py-3 rounded-full hover:bg-bg-cream transition-colors duration-300 active:scale-95">
                   Shop O₂ Plants
