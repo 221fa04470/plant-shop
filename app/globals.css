@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=DM+Sans:wght@300;400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  color: #1A1A1A;
+  background: #fff;
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-primary text-white px-6 py-3 rounded-full font-medium transition-all duration-300 hover:bg-primary-dark hover:shadow-card-hover active:scale-95;
+  }
+
+  .btn-outline {
+    @apply border-2 border-primary text-primary px-6 py-3 rounded-full font-medium transition-all duration-300 hover:bg-primary hover:text-white active:scale-95;
+  }
+
+  .section-title {
+    @apply font-heading text-3xl md:text-4xl font-bold text-text-dark;
+  }
+
+  .plant-card {
+    @apply bg-white rounded-2xl overflow-hidden shadow-card transition-all duration-300 hover:shadow-card-hover hover:-translate-y-1;
+  }
+}
