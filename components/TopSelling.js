@@ -62,7 +62,7 @@ const topSellingPlants = [
     id: 7,
     name: 'Spider Plant',
     price: 249,
-    image: 'https://images.unsplash.com/photo-1509423350716-97f9360b4e09?w=500&q=80',
+    image: 'https://images.unsplash.com/photo-1586093728776-e5a7d1e2d8f0?w=500&q=80',
     rating: 4.5,
     reviews: 143,
   },
