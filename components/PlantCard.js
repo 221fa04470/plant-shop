@@ -1,5 +1,6 @@
 'use client'
 import { useState } from 'react'
+import Image from 'next/image'
 import Button from './Button'
 
 export default function PlantCard({ name, price, originalPrice, image, tag, rating, reviews, isNew }) {
@@ -15,10 +16,12 @@ export default function PlantCard({ name, price, originalPrice, image, tag, rati
     <div className="plant-card group relative flex flex-col">
       {/* Image Container */}
       <div className="relative aspect-square overflow-hidden bg-bg-light">
-        <img
+        <Image
           src={image}
           alt={name}
-          className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+          fill
+          className="object-cover transition-transform duration-500 group-hover:scale-105"
+          sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
         />
 
         {/* Badges */}
