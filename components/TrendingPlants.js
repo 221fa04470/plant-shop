@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import SectionTitle from './SectionTitle'
 import Button from './Button'
 
@@ -24,7 +23,7 @@ const trendingPlants = [
   {
     id: 3,
     name: 'Fiddle Leaf Fig',
-    description: 'Gorgeous large leaves with a sculptural form. A designer\'s favourite.',
+    description: "Gorgeous large leaves with a sculptural form. A designer's favourite.",
     price: 1199,
     image: 'https://images.unsplash.com/photo-1509423350716-97f9360b4e09?w=600&q=80',
     accent: '#E8EAF6',
@@ -56,12 +55,10 @@ export default function TrendingPlants() {
             >
               {/* Image */}
               <div className="relative h-56 md:h-64 overflow-hidden">
-                <Image
+                <img
                   src={plant.image}
                   alt={plant.name}
-                  fill
-                  className="object-cover transition-transform duration-500 group-hover:scale-105"
-                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent" />
                 <span className="absolute top-4 left-4 bg-white text-text-dark text-xs font-semibold px-3 py-1 rounded-full shadow-sm">

@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import Button from './Button'
 
 export default function HeroBanner() {
@@ -26,12 +25,8 @@ export default function HeroBanner() {
               Discover our handpicked collection of beautiful plants. From air-purifying indoor varieties to stunning outdoor statement pieces — transform your space naturally.
             </p>
             <div className="flex flex-col sm:flex-row gap-3 justify-center lg:justify-start">
-              <Button variant="primary" size="lg">
-                Shop Now
-              </Button>
-              <Button variant="outline" size="lg">
-                Explore Collection
-              </Button>
+              <Button variant="primary" size="lg">Shop Now</Button>
+              <Button variant="outline" size="lg">Explore Collection</Button>
             </div>
 
             {/* Stats */}
@@ -52,12 +47,10 @@ export default function HeroBanner() {
           {/* Hero Image */}
           <div className="flex-1 relative w-full max-w-md lg:max-w-none">
             <div className="relative aspect-[4/5] rounded-3xl overflow-hidden shadow-card-hover">
-              <Image
-                src="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=800&q=80"
+              <img
+                src="https://images.unsplash.com/photo-1545759300-8197aed5d7a0?w=800&q=80"
                 alt="Beautiful indoor plants collection"
-                fill
-                className="object-cover"
-                priority
+                className="w-full h-full object-cover"
               />
               {/* Floating badge */}
               <div className="absolute top-6 left-6 bg-white rounded-2xl px-4 py-3 shadow-card">
